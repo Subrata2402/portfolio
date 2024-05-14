@@ -1,0 +1,104 @@
+.project {
+    padding: 20px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project .project-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px #174770;
+    margin: 20px 0;
+    overflow: auto;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.project .project-card:hover {
+    box-shadow: 0 0 20px #18d26e;
+    transform: scaleY(1.05);
+}
+
+.project .project-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project .project-card .project-info {
+    width: 100%;
+}
+
+.project .project-card .project-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #18d26e;
+}
+
+.project .project-card .project-info p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.project .project-card .project-info a {
+    color: #f1c40f;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    background-color: #0e2237;
+    border-radius: 50px;
+}
+
+.project .project-card .project-info a:hover {
+    box-shadow: 0 0 20px;
+}
+
+.project .project-card .project-info .project-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project .project-card .project-info .project-links a {
+    color: #f1c40f;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.project .project-card .project-info .project-links a:hover {
+    color: #18d26e;
+    text-shadow: 0 0 20px #18d26e;
+}
+
+/* .project .project-card .project-info .project-links a:last-child {
+    margin-left: auto;
+} */
+
+.project .project-card .project-info .project-links a:last-child:hover {
+    color: #e74c3c;
+    text-shadow: 0 0 20px #e74c3c;
+}
+
+.project .project-card .project-info .project-links a:last-child i {
+    font-size: 1.5rem;
+}
+
+.project .project-card .project-info .project-links a:last-child:hover i {
+    color: #e74c3c;
+}
+
+.project .project-card .project-info .project-links a:last-child:hover {
+    color: #e74c3c;
+}
