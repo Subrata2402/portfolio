@@ -1,5 +1,11 @@
 import React, { useEffect } from 'react'
 import './About.css';
+import { IoCalendarNumberOutline } from 'react-icons/io5';
+import { BsGlobe, BsPersonWorkspace } from 'react-icons/bs';
+import { MdMailOutline, MdOutlinePhoneAndroid } from 'react-icons/md';
+import { SlLocationPin } from 'react-icons/sl';
+import { GiGraduateCap } from 'react-icons/gi';
+import { FaRegUser } from 'react-icons/fa';
 
 function Progress(props) {
     return (
@@ -48,18 +54,18 @@ function About() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                                    <li><IoCalendarNumberOutline /> <strong>Birthday:</strong> <span>February 24, 2001</span></li>
+                                    <li><BsGlobe /> <strong>Website:</strong> <span>{window.location.origin}</span></li>
+                                    <li><MdOutlinePhoneAndroid /> <strong>Phone:</strong> <span>+91 9749844740</span></li>
+                                    <li><SlLocationPin /> <strong>Address:</strong> <span>West Bengal, India, 721101</span></li>
                                 </ul>
                             </div>
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
-                                    <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                    <li><FaRegUser /> <strong>Age:</strong> <span>30</span></li>
+                                    <li><GiGraduateCap /> <strong>Degree:</strong> <span>Master</span></li>
+                                    <li><MdMailOutline /> <strong>Email:</strong> <span>subratadas3250@gmail.com</span></li>
+                                    <li><BsPersonWorkspace /> <strong>Freelance:</strong> <span>Available</span></li>
                                 </ul>
                             </div>
                         </div>

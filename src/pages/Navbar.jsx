@@ -6,6 +6,7 @@ import { BsInfoSquareFill } from 'react-icons/bs';
 import { AiFillProject } from 'react-icons/ai';
 import { IoDocumentText } from 'react-icons/io5';
 import { MdPermContactCalendar } from 'react-icons/md';
+import { TbCertificate } from 'react-icons/tb';
 
 function Navbar() {
     const checkRef = useRef();
@@ -35,7 +36,8 @@ function Navbar() {
                     <NavLink to='/' onClick={handleClick}><ImHome />Home</NavLink>
                     <NavLink to='/about' onClick={handleClick}><BsInfoSquareFill />About</NavLink>
                     <NavLink to='/projects' onClick={handleClick}><AiFillProject />Projects</NavLink>
-                    <NavLink to='/resume' onClick={handleClick}><IoDocumentText />Resume</NavLink>
+                    {/* <NavLink to='/resume' onClick={handleClick}><IoDocumentText />Resume</NavLink> */}
+                    <NavLink to='/certificates' onClick={handleClick}><TbCertificate />Certificates</NavLink>
                     <NavLink to='/contact' onClick={handleClick}><MdPermContactCalendar />Contact</NavLink>
                 </div>
             </div>

@@ -27,7 +27,7 @@ function Home() {
                             <a href="mailto:subratadas3250@gmail.com"><RiUserSearchFill />Hire Me</a>
                         </div>
                         <div className="home-btn">
-                            <a href="https://www.github.com/Subrata2402" target="_blank" rel="noreferrer"><GrDocumentText />Download Resume</a>
+                            <a href="public/resume.pdf" target="_blank" rel="noreferrer" download><GrDocumentText />Download Resume</a>
                         </div>
                     </div>
                     <div className="home-social">
@@ -37,13 +37,13 @@ function Home() {
                         <a href="https://www.linkedin.com/in/subrata-das-867903243" target="_blank" rel="noreferrer">
                             <FaLinkedinIn />
                         </a>
-                        <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
+                        <a href="https://www.facebook.com/subrata3250" target="_blank" rel="noreferrer">
                             <FaFacebookF />
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                        <a href="https://discord.com/channels/@me/660337342032248832" target="_blank" rel="noreferrer">
                             <RxDiscordLogo />
                         </a>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                        <a href="https://twitter.com/Subrata3250" target="_blank" rel="noreferrer">
                             <BsTwitterX />
                         </a>
                     </div>

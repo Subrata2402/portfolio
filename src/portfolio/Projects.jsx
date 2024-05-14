@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Projects.css';
+import projects from '../utils/projects';
 
 function Projects() {
     useEffect(() => {
@@ -7,45 +8,23 @@ function Projects() {
     });
 
     return (
-        <div className="project">
-            <div className="project-card">
-                <img src="profile.jpg" alt="profile" />
-                <div className="project-info">
-                    <h3>Project Name</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <div className="project-links">
-                        <a href="https://www.github.com/Subrata2402" target="_blank" rel="noreferrer">Github</a>
-                        <a href="https://www.github.com/Subrata2402" target="_blank" rel="noreferrer">Live</a>
+        <div className="projects">
+            <h1>Projects</h1>
+            <hr className='border'/>
+            <div className="projects-container">
+                {projects.projects.map((project, index) => (
+                    <div className="project-card" key={index}>
+                        <img src={project.image} alt={project.name} />
+                        <div className="project-info">
+                            <h3>{project.name}</h3>
+                            <p>{project.description}</p>
+                            <div className="project-links">
+                                <a href={project.github} target="_blank" rel="noreferrer">Github</a>
+                                <a href={project.live} target="_blank" rel="noreferrer">Live</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="project-card">
-                <img src="profile.jpg" alt="profile" />
-                <div className="project-info">
-                    <h3>Project Name</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <div className="project-links">
-                        <a href="https://www.github.com/Subrata2402" target="_blank" rel="noreferrer">Github</a>
-                        <a href="https://www.github.com/Subrata2402" target="_blank" rel="noreferrer">Live</a>
-                    </div>
-                </div>
-            </div>
-            <div className="project-card">
-                <img src="profile.jpg" alt="profile" />
-                <div className="project-info">
-                    <h3>Project Name</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <div className="project-links">
-                        <a href="https://www.github.com/Subrata2402" target="_blank" rel="noreferrer">Github</a>
-                        <a href="https://www.github.com/Subrata2402" target="_blank" rel="noreferrer">Live</a>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     )

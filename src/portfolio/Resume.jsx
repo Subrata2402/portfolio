@@ -6,7 +6,7 @@ function Resume() {
     });
 
     return (
-        <div>Resume</div>
+        <iframe src="resume.pdf" frameborder="0" height={842}></iframe>
     )
 }
 

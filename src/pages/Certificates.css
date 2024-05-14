@@ -1,0 +1,104 @@
+.certificates {
+    padding: 20px 5%;
+}
+
+.certificates h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #18d26e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certificates .certificates-container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.certificates .certificate {
+    background-color: #0e2237;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1c426c;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.certificates .certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #18d26e;
+}
+
+.certificates .certificate img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.certificates .certificate h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #18d26e;
+    text-align: center;
+}
+
+.certificates .certificate p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    /* text-align: center; */
+}
+
+.certificates .certificate p span {
+    color: #18d26e;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.certificates .certificate a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    /* border: 2px solid #18d26e; */
+    background-color: #620d6f;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.certificates .certificate a:hover {
+    color: #0e2237;
+    background-color: #18d26e;
+    box-shadow: 0 0 20px #18d26e;
+    text-shadow: 0 0 30px;
+}
+
+.certificates .certificate a:active {
+    transform: scale(0.9);
+}
+
+/* .certificates .certificate a:visited {
+    color: #18d26e;
+}
+
+.certificates .certificate a:link {
+    color: #18d26e;
+} */
+
+.certificates .certificate a:focus {
+    outline: none;
+}

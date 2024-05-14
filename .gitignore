@@ -29,3 +29,5 @@ yarn.lock
 .firebaserc
 firebase.json
 .firebase/*
+public/certificates/*
+public/resume.pdf

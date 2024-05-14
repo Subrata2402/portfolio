@@ -16,3 +16,8 @@ body>div#root {
 a {
     text-decoration: none !important;
 }
+
+iframe {
+    height: calc(100vh - 134px);
+    width: 100%;
+}

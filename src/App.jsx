@@ -6,6 +6,7 @@ import Resume from './portfolio/Resume';
 import Layout from './Layout';
 import Home from './portfolio/Home';
 import Contact from './portfolio/Contact';
+import Certificates from './pages/Certificates';
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />
+            },
+            {
+                path: '/certificates',
+                element: <Certificates />
             }
         ]
     },

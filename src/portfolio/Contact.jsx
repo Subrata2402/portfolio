@@ -38,13 +38,13 @@ function Contact() {
                             <a href="https://www.linkedin.com/in/subrata-das-867903243" target="_blank" rel="noreferrer">
                                 <FaLinkedin />
                             </a>
-                            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
+                            <a href="https://www.facebook.com/subrata3250" target="_blank" rel="noreferrer">
                                 <FaFacebookSquare />
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                            <a href="https://discord.com/channels/@me/660337342032248832" target="_blank" rel="noreferrer">
                                 <IoLogoDiscord />
                             </a>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                            <a href="https://twitter.com/Subrata3250" target="_blank" rel="noreferrer">
                                 <FaSquareXTwitter />
                             </a>
                         </div>
