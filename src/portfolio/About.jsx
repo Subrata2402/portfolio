@@ -62,7 +62,7 @@ function About() {
                             </div>
                             <div className="col-lg-6">
                                 <ul>
-                                    <li><FaRegUser /> <strong>Age:</strong> <span>30</span></li>
+                                    <li><FaRegUser /> <strong>Age:</strong> <span>23</span></li>
                                     <li><GiGraduateCap /> <strong>Degree:</strong> <span>Master</span></li>
                                     <li><MdMailOutline /> <strong>Email:</strong> <span>subratadas3250@gmail.com</span></li>
                                     <li><BsPersonWorkspace /> <strong>Freelance:</strong> <span>Available</span></li>
