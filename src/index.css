@@ -5,6 +5,10 @@
     font-family: 'popins', sans-serif;
 }
 
+:root {
+    --bg-color: linear-gradient(135deg, #344179 0%, #37234a 100%);
+}
+
 body>div#root {
     background-color: #0e2237;
     min-height: 100vh;

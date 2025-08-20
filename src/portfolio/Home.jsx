@@ -89,6 +89,9 @@ function Home() {
                 <div className="bg-shape shape-1"></div>
                 <div className="bg-shape shape-2"></div>
                 <div className="bg-shape shape-3"></div>
+                <div className="bg-shape shape-4"></div>
+                <div className="bg-shape shape-5"></div>
+                <div className="bg-shape shape-6"></div>
                 <div className="floating-elements">
                     {technologies.map((tech, index) => (
                         <div 
