@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { ImHome } from 'react-icons/im';
@@ -7,16 +7,30 @@ import { AiFillProject } from 'react-icons/ai';
 import { IoDocumentText } from 'react-icons/io5';
 import { MdPermContactCalendar } from 'react-icons/md';
 import { TbCertificate } from 'react-icons/tb';
+import { FaCode } from 'react-icons/fa';
 
 function Navbar() {
     const checkRef = useRef();
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 100);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const handleClick = () => {
         checkRef.current.checked = false;
     }
 
     return (
-        <div className="nav-bar">
+        <div className={`nav-bar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="logo">
                 <Link to='/' className='d-flex align-items-center'>
                     <img src="avatarlogo.png" alt="Profile" />
@@ -35,6 +49,7 @@ function Navbar() {
                 <div className="navbar-links">
                     <NavLink to='/' onClick={handleClick}><ImHome />Home</NavLink>
                     <NavLink to='/about' onClick={handleClick}><BsInfoSquareFill />About</NavLink>
+                    <NavLink to='/skills' onClick={handleClick}><FaCode />Skills</NavLink>
                     <NavLink to='/projects' onClick={handleClick}><AiFillProject />Projects</NavLink>
                     {/* <NavLink to='/resume' onClick={handleClick}><IoDocumentText />Resume</NavLink> */}
                     <NavLink to='/certificates' onClick={handleClick}><TbCertificate />Certificates</NavLink>

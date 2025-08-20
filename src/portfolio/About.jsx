@@ -1,89 +1,142 @@
-import React, { useEffect } from 'react'
-import './About.css';
-import { IoCalendarNumberOutline } from 'react-icons/io5';
+import React, { useState, useEffect } from 'react';
+import { FaCode, FaPaintBrush, FaMobile, FaRegUser, FaLaptopCode } from 'react-icons/fa';
 import { BsGlobe, BsPersonWorkspace } from 'react-icons/bs';
-import { MdMailOutline, MdOutlinePhoneAndroid } from 'react-icons/md';
-import { SlLocationPin } from 'react-icons/sl';
 import { GiGraduateCap } from 'react-icons/gi';
-import { FaRegUser } from 'react-icons/fa';
+import './About.css';
 
-function Progress(props) {
+function InfoCard({ icon, label, value, delay }) {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, delay);
+        return () => clearTimeout(timer);
+    }, [delay]);
+
     return (
-        <div className="col-md-6">
-            <span>{props.language} - {props.progress}%</span>
-            <div
-                class="progress mt-2 mb-4"
-                role="progressbar"
-                aria-label="Basic example"
-                aria-valuenow={props.progress}
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style={{backgroundColor: "lightskyblue"}}
-            >
-                <div class="progress-bar" style={{ width: `${props.progress}%` }}></div>
+        <div className={`info-card ${isVisible ? 'slide-in' : ''}`}>
+            <div className="info-icon">
+                {icon}
+            </div>
+            <div className="info-content">
+                <span className="info-label">{label}</span>
+                <span className="info-value">{value}</span>
             </div>
         </div>
-    )
+    );
+}
+
+function ServiceCard({ icon, title, description, delay }) {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, delay);
+        return () => clearTimeout(timer);
+    }, [delay]);
+
+    return (
+        <div className={`service-card ${isVisible ? 'fade-up' : ''}`}>
+            <div className="service-icon">
+                {icon}
+            </div>
+            <h4>{title}</h4>
+            <p>{description}</p>
+        </div>
+    );
 }
 
 function About() {
+    const [headerVisible, setHeaderVisible] = useState(false);
+    const [imageVisible, setImageVisible] = useState(false);
+
     useEffect(() => {
         document.title = "Portfolio - About";
-        // animation progress bar
-        const progressBars = document.querySelectorAll('.progress-bar');
-        progressBars.forEach((progressBar) => {
-            progressBar.style.width = progressBar.getAttribute('aria-valuenow') + '%';
-        });
-    });
+        
+        const headerTimer = setTimeout(() => {
+            setHeaderVisible(true);
+        }, 100);
+
+        const imageTimer = setTimeout(() => {
+            setImageVisible(true);
+        }, 300);
+
+        return () => {
+            clearTimeout(headerTimer);
+            clearTimeout(imageTimer);
+        };
+    }, []);
+
+    const services = [
+        {
+            icon: <FaCode />,
+            title: "Web Development",
+            description: "Building responsive and modern web applications using latest technologies",
+            delay: 400
+        },
+        {
+            icon: <FaLaptopCode />,
+            title: "Backend Development",
+            description: "Creating robust APIs and server-side applications with Node.js and databases",
+            delay: 600
+        },
+        {
+            icon: <FaMobile />,
+            title: "Mobile Development",
+            description: "Developing cross-platform mobile applications using Flutter framework",
+            delay: 800
+        }
+    ];
 
     return (
-        <div className='about'>
-            <div className="about-me">
-
-                <div className="row">
-                    <div className="col-lg-4" data-aos="fade-right">
-                        <img src="avatarlogo.png" className="img-fluid" alt="" />
-                    </div>
-                    <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3 className='fw-bold'>Web & App Developer</h3>
-                        <hr className='border' />
-                        <p className="fst-italic">
-                            I am a web and app developer. I have been developing web and app for 2 years. I have developed many web and app projects. I have a good knowledge of web and app development. I have developed many projects using Python, React.js, Mongodb, Node.js, Express.js, Rest API, Flutter, JavaScript, etc.
+        <div className='about-page'>
+            <div className="about-hero">
+                <div className="hero-background">
+                    <div className="gradient-orb orb-1"></div>
+                    <div className="gradient-orb orb-2"></div>
+                    <div className="gradient-orb orb-3"></div>
+                </div>
+                
+                <div className="hero-content">
+                    <div className={`hero-text ${headerVisible ? 'fade-in-left' : ''}`}>
+                        <span className="greeting">Hello, I'm</span>
+                        <h1 className="hero-title">Subrata Das</h1>
+                        <h2 className="hero-subtitle">Web & App Developer</h2>
+                        <p className="hero-description">
+                            I am a passionate web and app developer with 2+ years of experience. 
+                            I specialize in creating modern, responsive applications using cutting-edge 
+                            technologies like React.js, Node.js, Python, and Flutter.
                         </p>
-                        <div className="row">
-                            <div className="col-lg-6">
-                                <ul>
-                                    <li><IoCalendarNumberOutline /> <strong>Birthday:</strong> <span>February 24, 2001</span></li>
-                                    <li><BsGlobe /> <strong>Website:</strong> <span>{window.location.origin}</span></li>
-                                    <li><MdOutlinePhoneAndroid /> <strong>Phone:</strong> <span>+91 9749844740</span></li>
-                                    <li><SlLocationPin /> <strong>Address:</strong> <span>West Bengal, India, 721101</span></li>
-                                </ul>
-                            </div>
-                            <div className="col-lg-6">
-                                <ul>
-                                    <li><FaRegUser /> <strong>Age:</strong> <span>23</span></li>
-                                    <li><GiGraduateCap /> <strong>Degree:</strong> <span>Master</span></li>
-                                    <li><MdMailOutline /> <strong>Email:</strong> <span>subratadas3250@gmail.com</span></li>
-                                    <li><BsPersonWorkspace /> <strong>Freelance:</strong> <span>Available</span></li>
-                                </ul>
-                            </div>
+                    </div>
+                    
+                    <div className={`hero-image ${imageVisible ? 'fade-in-right' : ''}`}>
+                        <div className="image-container">
+                            <img src="avatarlogo.png" alt="Profile" />
+                            <div className="image-glow"></div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div className="skills row mt-5">
-
-                <Progress language='Python' progress='70' />
-                <Progress language='React.js' progress='60' />
-                <Progress language='Mongodb' progress='70' />
-                <Progress language='Node.js' progress='60' />
-                <Progress language='Express.js' progress='50' />
-                <Progress language='Rest API' progress='60' />
-                <Progress language='Flutter' progress='40' />
-                <Progress language='JavaScript' progress='80' />
-
+            <div className="services-section">
+                <div className="section-header">
+                    <h3>What I Do</h3>
+                    <div className="section-line"></div>
+                </div>
+                
+                <div className="services-grid">
+                    {services.map((service, index) => (
+                        <ServiceCard
+                            key={index}
+                            icon={service.icon}
+                            title={service.title}
+                            description={service.description}
+                            delay={service.delay}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     )
