@@ -17,10 +17,12 @@ function Home() {
             <div className="col-md-6 m-0 p-0">
                 <div className="home-title">
                     <h1>Hi, I'm <span>Subrata Das</span></h1>
-                    <h3 className='text-info'>Web Developer</h3>
+                    <h3 className='text-info'>Web & App Developer</h3>
                 </div>
                 <div className="home-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas ultricies vel ac nunc. Nullam nec nunc nec nunc ultricies ultricies. Nullam nec nunc nec nunc ultricies ultricies.</p>
+                    <p>
+                        I am a web developer. I have been developing web for 2 years. I have developed many web projects. I have a good knowledge of web development. I have developed many projects using Python, React.js, Mongodb, Node.js, Express.js, Rest API, JavaScript, etc.
+                    </p>
 
                     <div className="home-buttons">
                         <div className="home-btn">
@@ -50,7 +52,7 @@ function Home() {
                 </div>
             </div>
             <div className="col-md-6 profile-logo">
-                <img src="profile-logo.jpg" alt="profile" className='p-4' />
+                <img src="avatarlogo.png" alt="profile" className='p-4' />
             </div>
         </div>
     )

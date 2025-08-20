@@ -20,7 +20,7 @@ function Projects() {
                             <p>{project.description}</p>
                             <div className="project-links">
                                 <a href={project.github} target="_blank" rel="noreferrer">Github</a>
-                                <a href={project.live} target="_blank" rel="noreferrer">Live</a>
+                                {project.live && <a href={project.live} target="_blank" rel="noreferrer">Live</a>}
                             </div>
                         </div>
                     </div>

@@ -42,14 +42,13 @@ function About() {
 
                 <div className="row">
                     <div className="col-lg-4" data-aos="fade-right">
-                        <img src="profile-logo.jpg" className="img-fluid" alt="" />
+                        <img src="avatarlogo.png" className="img-fluid" alt="" />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3 className='fw-bold'>Web Developer</h3>
+                        <h3 className='fw-bold'>Web & App Developer</h3>
                         <hr className='border' />
                         <p className="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
+                            I am a web and app developer. I have been developing web and app for 2 years. I have developed many web and app projects. I have a good knowledge of web and app development. I have developed many projects using Python, React.js, Mongodb, Node.js, Express.js, Rest API, Flutter, JavaScript, etc.
                         </p>
                         <div className="row">
                             <div className="col-lg-6">
@@ -69,10 +68,6 @@ function About() {
                                 </ul>
                             </div>
                         </div>
-                        <p>
-                            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                        </p>
                     </div>
                 </div>
 
@@ -82,12 +77,12 @@ function About() {
 
                 <Progress language='Python' progress='70' />
                 <Progress language='React.js' progress='60' />
-                <Progress language='Mongodb' progress='50' />
+                <Progress language='Mongodb' progress='70' />
                 <Progress language='Node.js' progress='60' />
                 <Progress language='Express.js' progress='50' />
-                <Progress language='Rest API' progress='80' />
-                <Progress language='OOPs' progress='60' />
-                <Progress language='JavaScript' progress='60' />
+                <Progress language='Rest API' progress='60' />
+                <Progress language='Flutter' progress='40' />
+                <Progress language='JavaScript' progress='80' />
 
             </div>
         </div>

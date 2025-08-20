@@ -19,7 +19,7 @@ function Navbar() {
         <div className="nav-bar">
             <div className="logo">
                 <Link to='/' className='d-flex align-items-center'>
-                    <img src="profile.jpg" alt="Profile" />
+                    <img src="avatarlogo.png" alt="Profile" />
                     <span className='ms-3 fs-3 fw-bolder'>Subrata Das</span>
                 </Link>
             </div>
