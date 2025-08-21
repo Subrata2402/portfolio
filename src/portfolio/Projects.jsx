@@ -3,6 +3,7 @@ import './Projects.css';
 import projects from '../utils/projects';
 import { FaGithub, FaExternalLinkAlt, FaCode, FaEye, FaFilter } from 'react-icons/fa';
 import { BiSearch } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 function ProjectCard({ project, delay }) {
     const [isVisible, setIsVisible] = useState(false);
@@ -166,9 +167,9 @@ function Projects() {
                     <div className="footer-content">
                         <h3>Interested in collaborating?</h3>
                         <p>Let's build something amazing together!</p>
-                        <a href="/contact" className="cta-button">
+                        <Link to="/contact" className="cta-button">
                             Get In Touch
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
