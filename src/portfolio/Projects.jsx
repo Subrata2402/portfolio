@@ -48,9 +48,11 @@ function ProjectCard({ project, delay }) {
                 <p className="project-description">{project.description}</p>
                 
                 <div className="project-tech">
-                    <span className="tech-badge">React</span>
-                    <span className="tech-badge">Node.js</span>
-                    <span className="tech-badge">MongoDB</span>
+                    {project.techs.map((tech, index) => (
+                        <span key={index} className="tech-badge">
+                            {tech}
+                        </span>
+                    ))}
                 </div>
                 
                 <div className="project-actions">
@@ -61,7 +63,7 @@ function ProjectCard({ project, delay }) {
                         className="project-btn github-btn"
                     >
                         <FaGithub />
-                        <span>Source Code</span>
+                        <span>GitHub</span>
                     </a>
                     {project.live && (
                         <a 
@@ -71,7 +73,7 @@ function ProjectCard({ project, delay }) {
                             className="project-btn live-btn"
                         >
                             <FaExternalLinkAlt />
-                            <span>Live Demo</span>
+                            <span>Live</span>
                         </a>
                     )}
                 </div>
