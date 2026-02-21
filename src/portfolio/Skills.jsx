@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Skills.css';
-import { FaPython, FaReact, FaNode, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaDocker, FaAws } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiFlutter, SiTypescript, SiTailwindcss, SiBootstrap, SiPostman, SiFigma, SiMysql, SiPostgresql, SiFirebase, SiNextdotjs, SiGraphql } from 'react-icons/si';
-import { MdApi } from 'react-icons/md';
-import { BiLogoVisualStudio } from "react-icons/bi";
+import { FaPython, FaReact, FaNode, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaDocker, FaAws } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiFlutter, SiTypescript, SiPostman, SiFigma, SiJira } from 'react-icons/si';
 
 function SkillSection({ title, description, skills, delay }) {
     const [isVisible, setIsVisible] = useState(false);
@@ -94,7 +92,7 @@ function Skills() {
         { skill: 'React', icon: <FaReact />, progress: 90, color: '#61DAFB', delay: 100 },
         { skill: 'JavaScript', icon: <FaJs />, progress: 95, color: '#F7DF1E', delay: 200 },
         { skill: 'TypeScript', icon: <SiTypescript />, progress: 85, color: '#3178C6', delay: 300 },
-        { skill: 'Next.js', icon: <SiNextdotjs />, progress: 80, color: '#000000', delay: 400 },
+        { skill: 'Flutter', icon: <SiFlutter />, progress: 80, color: '#47C5FB', delay: 400 },
         { skill: 'HTML5', icon: <FaHtml5 />, progress: 95, color: '#E34F26', delay: 500 },
         { skill: 'CSS3', icon: <FaCss3Alt />, progress: 90, color: '#1572B6', delay: 600 }
     ];
@@ -103,16 +101,16 @@ function Skills() {
         { skill: 'Node.js', icon: <FaNode />, progress: 85, color: '#339933', delay: 100 },
         { skill: 'Express.js', icon: <SiExpress />, progress: 80, color: '#000000', delay: 200 },
         { skill: 'Python', icon: <FaPython />, progress: 75, color: '#3776AB', delay: 300 },
-        { skill: 'GraphQL', icon: <SiGraphql />, progress: 70, color: '#E10098', delay: 400 },
-        { skill: 'MongoDB', icon: <SiMongodb />, progress: 80, color: '#47A248', delay: 500 },
-        { skill: 'PostgreSQL', icon: <SiPostgresql />, progress: 75, color: '#336791', delay: 600 }
+        { skill: 'MongoDB', icon: <SiMongodb />, progress: 80, color: '#47A248', delay: 500 }
     ];
 
     const otherTools = [
         { skill: 'Git', icon: <FaGitAlt />, progress: 90, color: '#F05032', delay: 100 },
         { skill: 'Docker', icon: <FaDocker />, progress: 75, color: '#2496ED', delay: 200 },
         { skill: 'AWS', icon: <FaAws />, progress: 70, color: '#FF9900', delay: 300 },
-        { skill: 'Figma', icon: <SiFigma />, progress: 80, color: '#F24E1E', delay: 400 }
+        { skill: 'Figma', icon: <SiFigma />, progress: 80, color: '#F24E1E', delay: 400 },
+        { skill: 'Jira', icon: <SiJira />, progress: 80, color: '#0052CC', delay: 500 },
+        { skill: 'Postman', icon: <SiPostman />, progress: 80, color: '#FF6C37', delay: 600 },
     ];
 
     return (

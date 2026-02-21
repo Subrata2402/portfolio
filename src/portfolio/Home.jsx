@@ -14,8 +14,7 @@ function Home() {
 
     const roles = [
         "Full Stack Developer",
-        "React.js Developer", 
-        "Python Developer",
+        "React.js Developer",
         "Web Developer",
         "Mobile App Developer"
     ];

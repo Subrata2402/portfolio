@@ -45,5 +45,14 @@ export default {
             "github": "https://github.com/Subrata2402/doux_chat",
             "live": ""
         },
+        {
+            "id": 6,
+            "name": "Temp Message (Real-time Chat Application)",
+            "description": "A web application that allows users to send temporary messages that disappear after close the tab or after a certain time. It uses WebSockets for real-time communication and allows users to create and join chat rooms.",
+            "techs": ["React.js", "Node.js", "Express.js", "Socket.io"],
+            "image": "temp-message.png",
+            "github": "https://github.com/Subrata2402/doux_chat",
+            "live": "https://tempmessage.web.app/"
+        },
     ]
 }
