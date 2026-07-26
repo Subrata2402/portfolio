@@ -54,5 +54,23 @@ export default {
             "github": "https://github.com/Subrata2402/doux_chat",
             "live": "https://tempmessage.web.app/"
         },
+        {
+            "id": 7,
+            "name": "TestAPK Web Application (Android App Distribution Platform)",
+            "description": "TestAPK is a secure, self-hosted mobile app distribution platform that allows developers to manage, distribute, and test Android application packages (APKs) using their own Google Drive storage. It provides a convenient way to share and test Android apps without relying on third-party app stores.",
+            "techs": ["React.js", "Node.js", "Express.js", "Firebase"],
+            "image": "apktest-logo.png",
+            "github": "https://github.com/Subrata2402/testapk",
+            "live": "https://testapk.clipboux.online/"
+        },
+        {
+            "id": 8,
+            "name": "TestAPK CLI",
+            "description": "A powerful command-line interface for automating release uploads directly from your CI/CD pipelines. It allows developers to streamline the process of distributing Android application packages (APKs) to their TestAPK platform, making it easier to manage and deploy app releases efficiently.",
+            "techs": ["Node.js", "Express.js", "Commander.js"],
+            "image": "testapk-cli.png",
+            "github": "https://github.com/Subrata2402/testapk",
+            "live": "https://www.npmjs.com/package/testapk-cli"
+        },
     ]
 }

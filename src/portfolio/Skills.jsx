@@ -106,8 +106,8 @@ function Skills() {
 
     const otherTools = [
         { skill: 'Git', icon: <FaGitAlt />, progress: 90, color: '#F05032', delay: 100 },
-        { skill: 'Docker', icon: <FaDocker />, progress: 75, color: '#2496ED', delay: 200 },
-        { skill: 'AWS', icon: <FaAws />, progress: 70, color: '#FF9900', delay: 300 },
+        // { skill: 'Docker', icon: <FaDocker />, progress: 75, color: '#2496ED', delay: 200 },
+        // { skill: 'AWS', icon: <FaAws />, progress: 70, color: '#FF9900', delay: 300 },
         { skill: 'Figma', icon: <SiFigma />, progress: 80, color: '#F24E1E', delay: 400 },
         { skill: 'Jira', icon: <SiJira />, progress: 80, color: '#0052CC', delay: 500 },
         { skill: 'Postman', icon: <SiPostman />, progress: 80, color: '#FF6C37', delay: 600 },
